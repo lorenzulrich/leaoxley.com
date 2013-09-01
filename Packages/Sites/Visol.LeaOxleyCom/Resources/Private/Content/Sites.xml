@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<site nodeName="leaoxleycom">
+		<properties>
+			<name>Lea Oxley</name>
+			<state>1</state>
+			<siteResourcesPackageKey>Visol.LeaOxleyCom</siteResourcesPackageKey>
+		</properties>
+		<node identifier="" type="TYPO3.Neos:Page" nodeName="homepage" locale="en_EN">
+			<properties>
+				<title>Home</title>
+			</properties>
+		</node>
+	</site>
+</root>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{namespace typo3=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<html>
+<head>
+	
+	<f:section name="stylesheets">
+		<!-- put your stylesheet inclusions here, they will be included in your website by TypoScript -->
+	</f:section>
+
+	<f:section name="scripts">
+		<!-- put your scripts inclusions here, they will be included in your website by TypoScript -->
+	</f:section>
+	
+</head>
+<body>
+<f:section name="body">
+	<h1>A freshly created template for your new site!</h1>
+	<nav class="menu"><ts:render path="parts.menu" /></nav>
+	<nav class="breadcrumb"><ts:render path="parts.breadcrumb" /></nav>
+	<div class="content"><ts:render path="content.main" /></div>
+</f:section>
+</body>
+</html>
