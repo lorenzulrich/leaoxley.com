@@ -1,0 +1,73 @@
+'Visol.LeaOxleyCom:YouTube':
+  superTypes:
+    - 'TYPO3.Neos.NodeTypes:Headline'
+  ui:
+    label: YouTube
+    icon: 'icon-youtube'
+    inspector:
+      groups:
+        video:
+          label: Video
+  properties:
+    title: { defaultValue: '<h2>Titel</h2>' }
+    video:
+      type: string
+      defaultValue: ''
+      ui:
+        label: ID
+        reloadIfChanged: TRUE
+        inspector:
+          group: video
+    width:
+      type: integer
+      defaultValue: 560
+      ui:
+        label: Width
+        reloadIfChanged: TRUE
+        inspector:
+          group: video
+    height:
+      type: integer
+      defaultValue: 315
+      ui:
+        label: Height
+        reloadIfChanged: TRUE
+        inspector:
+          group: video
+
+'Visol.LeaOxleyCom:Soundcloud':
+  superTypes:
+    - 'TYPO3.Neos.NodeTypes:Headline'
+  ui:
+    label: Soundcloud
+    icon: 'icon-music'
+    inspector:
+      groups:
+        audio:
+          label: Audio
+  properties:
+    title: { defaultValue: '<h2>Titel</h2>' }
+    audio:
+      type: string
+      defaultValue: ''
+      ui:
+        label: Track
+        reloadIfChanged: TRUE
+        inspector:
+          group: audio
+    width:
+      type: string
+      defaultValue: '100%'
+      ui:
+        label: Width
+        reloadIfChanged: TRUE
+        inspector:
+          group: audio
+    height:
+      type: string
+      defaultValue: '166'
+      ui:
+        label: Height
+        reloadIfChanged: TRUE
+        inspector:
+          group: audio

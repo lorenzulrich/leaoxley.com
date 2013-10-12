@@ -2,9 +2,25 @@
 /**
  * Root TypoScript template for the Lea Oxley Site
  */
+ 
+include: TypoScripts/Library/ContentElements.ts2
+namespace: TypoScript=TYPO3.TypoScript
+
 page = Page
 
+page.htmlAttributes = ${q(node).property('title')}
+page.htmlAttributes << 1.wrap(prefix: 'id="page', suffix: '"')
+
+
 page.head {
+	meta = TYPO3.TypoScript:Template
+	meta {
+		templatePath = 'resource://Visol.LeaOxleyCom/Private/Templates/Page/Default.html'
+		sectionName = 'meta'
+		title = ${q(node).property('title')}
+		language = ${q(node).parents().property('title') == 'de' ? 'de' : 'en'}
+	}
+
 	stylesheets = TYPO3.TypoScript:Template
 	stylesheets {
 		templatePath = 'resource://Visol.LeaOxleyCom/Private/Templates/Page/Default.html'
@@ -21,9 +37,14 @@ page.head {
 page.body {
 	templatePath = 'resource://Visol.LeaOxleyCom/Private/Templates/Page/Default.html'
 	sectionName = 'body'
+	
+
+	
+	claim = ${q(node).parents().property('title') == 'de' ? 'Sängerin & Schauspielerin' : 'singer & actress'}
 	parts {
 		menu = Menu
 		breadcrumb =  Breadcrumb
+		languageMenu = LanguageMenu
 	}
 		// These are your content areas, you can define as many as you want, just name them and the nodePath.
 	content {
@@ -31,3 +52,9 @@ page.body {
 		main.nodePath = 'main'
 	}
 }
+
+prototype(Menu).entryLevel = 2
+prototype(Menu).templatePath = 'resource://Visol.LeaOxleyCom/Private/Templates/TypoScriptObjects/Menu.html'
+
+prototype(LanguageMenu) < prototype(Menu)
+prototype(LanguageMenu).entryLevel = 1

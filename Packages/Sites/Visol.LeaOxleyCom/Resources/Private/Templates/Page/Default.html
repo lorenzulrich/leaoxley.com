@@ -1,24 +1,95 @@
 <!DOCTYPE html>
 {namespace typo3=TYPO3\Neos\ViewHelpers}
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
-<html>
-<head>
+<html class="no-js">
+    <head>
 	
-	<f:section name="stylesheets">
-		<!-- put your stylesheet inclusions here, they will be included in your website by TypoScript -->
-	</f:section>
+		<f:section name="meta">
+			<title>{title} - <f:if condition="{language} == 'de'"><f:then>Lea Oxley • Sängerin & Schauspielerin</f:then><f:else>Lea Oxley • singer & actress</f:else></f:if></title>
+		</f:section>
+	
+		<f:section name="stylesheets">
+			<link rel="stylesheet" href="../../../Public/Stylesheets/normalize.min.css" media="all" />
+			<link rel="stylesheet" href="../../../Public/Stylesheets/main.css" media="all" />
+			<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,500|Lustria' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="../../../Public/JavaScript/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+			</f:section>
 
-	<f:section name="scripts">
-		<!-- put your scripts inclusions here, they will be included in your website by TypoScript -->
+		<f:section name="scripts">
+			<script src="../../../Public/JavaScript/modernizr-2.6.2.min.js"></script>
+		</f:section>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+    </head>
+    <body>
+	<f:section name="body">
+        <header id="siteHeader">
+            <div id="innerHeader">
+                <div id="logo">
+                </div>
+                <div id="profession">
+                    {claim}
+                </div>
+                <div id="topNav">
+					<ts:render path="parts.menu" />
+                    <f:comment>
+					<ul class="level1">
+                        <li class="first active"><a href="index.html">Home</a></li>
+                        <li class="middle"><a href="cv.html">CV</a></li>
+                        <li class="middle"><a href="music.html">Music</a></li>
+                        <li class="middle"><a href="film.html">Film</a></li>
+                        <li class="last"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+					</f:comment>
+                </div>
+
+                <div id="langNav">
+					<ts:render path="parts.languageMenu">
+                   <a href="#">DE</a>
+				   </ts:render>
+                </div>
+
+            </div>
+        </header>
+
+
+        <div id="container">
+            <div id="content">
+				<ts:render path="content.main" />
+				<f:comment>
+                <h1>Home</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				</f:comment>
+            </div>
+        </div>
+
+        <footer id="siteFooter">
+            <div id="footer">
+                <div id="innerFooter">
+                    <f:link.email email="contact@leaoxley.com">contact@leaoxley.com</f:link.email> • +41 79 668 08 78
+                </div>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="../../../Public/JavaScript/fancybox/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-44053514-1', 'leaoxley.com');
+		  ga('send', 'pageview');
+		</script>
 	</f:section>
-	
-</head>
-<body>
-<f:section name="body">
-	<h1>A freshly created template for your new site!</h1>
-	<nav class="menu"><ts:render path="parts.menu" /></nav>
-	<nav class="breadcrumb"><ts:render path="parts.breadcrumb" /></nav>
-	<div class="content"><ts:render path="content.main" /></div>
-</f:section>
-</body>
+    </body>
 </html>

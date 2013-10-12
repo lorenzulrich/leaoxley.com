@@ -92,30 +92,6 @@ return array (
       'packagePath' => 'Libraries/doctrine/migrations/',
       'classesPath' => 'lib/',
     ),
-    'symfony.console' => 
-    array (
-      'manifestPath' => 'Symfony/Component/Console/',
-      'composerName' => 'symfony/console',
-      'state' => 'active',
-      'packagePath' => 'Libraries/symfony/console/',
-      'classesPath' => '',
-    ),
-    'symfony.domcrawler' => 
-    array (
-      'manifestPath' => 'Symfony/Component/DomCrawler/',
-      'composerName' => 'symfony/dom-crawler',
-      'state' => 'active',
-      'packagePath' => 'Libraries/symfony/dom-crawler/',
-      'classesPath' => '',
-    ),
-    'symfony.yaml' => 
-    array (
-      'manifestPath' => 'Symfony/Component/Yaml/',
-      'composerName' => 'symfony/yaml',
-      'state' => 'active',
-      'packagePath' => 'Libraries/symfony/yaml/',
-      'classesPath' => '',
-    ),
     'TYPO3.Eel' => 
     array (
       'manifestPath' => '',
@@ -188,6 +164,22 @@ return array (
       'packagePath' => 'Framework/TYPO3.Kickstart/',
       'classesPath' => 'Classes/',
     ),
+    'TYPO3.Neos.NodeTypes' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'typo3/neos-nodetypes',
+      'state' => 'active',
+      'packagePath' => 'Application/TYPO3.Neos.NodeTypes/',
+      'classesPath' => 'Classes/',
+    ),
+    'TYPO3.SiteKickstarter' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'typo3/sitekickstarter',
+      'state' => 'active',
+      'packagePath' => 'Application/TYPO3.SiteKickstarter/',
+      'classesPath' => 'Classes/',
+    ),
     'TYPO3.TYPO3CR' => 
     array (
       'manifestPath' => '',
@@ -220,13 +212,21 @@ return array (
       'packagePath' => 'Application/TYPO3.TypoScript/',
       'classesPath' => 'Classes/',
     ),
-    'TYPO3.Neos.NodeTypes' => 
+    'Visol.LeaOxleyCom' => 
     array (
-      'manifestPath' => '',
-      'composerName' => 'typo3/neos-nodetypes',
       'state' => 'active',
-      'packagePath' => 'Application/TYPO3.Neos.NodeTypes/',
+      'packagePath' => 'Sites/Visol.LeaOxleyCom/',
       'classesPath' => 'Classes/',
+      'manifestPath' => '',
+      'composerName' => 'visol/leaoxleycom',
+    ),
+    'Visol.Plugin.FlickrGallery' => 
+    array (
+      'state' => 'active',
+      'packagePath' => 'Application/Visol.Plugin.FlickrGallery/',
+      'classesPath' => 'Classes/',
+      'manifestPath' => '',
+      'composerName' => 'visol/plugin-flickrgallery',
     ),
     'imagine.imagine' => 
     array (
@@ -235,54 +235,6 @@ return array (
       'state' => 'active',
       'packagePath' => 'Libraries/imagine/imagine/',
       'classesPath' => 'lib/',
-    ),
-    'TYPO3.Imagine' => 
-    array (
-      'manifestPath' => '',
-      'composerName' => 'typo3/imagine',
-      'state' => 'active',
-      'packagePath' => 'Application/TYPO3.Imagine/',
-      'classesPath' => 'Classes/',
-    ),
-    'TYPO3.Media' => 
-    array (
-      'manifestPath' => '',
-      'composerName' => 'typo3/media',
-      'state' => 'active',
-      'packagePath' => 'Application/TYPO3.Media/',
-      'classesPath' => 'Classes/',
-    ),
-    'TYPO3.Neos' => 
-    array (
-      'manifestPath' => '',
-      'composerName' => 'typo3/neos',
-      'state' => 'active',
-      'packagePath' => 'Application/TYPO3.Neos/',
-      'classesPath' => 'Classes/',
-    ),
-    'TYPO3.NeosDemoTypo3Org' => 
-    array (
-      'manifestPath' => '',
-      'composerName' => 'typo3/neosdemotypo3org',
-      'state' => 'active',
-      'packagePath' => 'Sites/TYPO3.NeosDemoTypo3Org/',
-      'classesPath' => 'Classes/',
-    ),
-    'TYPO3.SiteKickstarter' => 
-    array (
-      'manifestPath' => '',
-      'composerName' => 'typo3/sitekickstarter',
-      'state' => 'active',
-      'packagePath' => 'Application/TYPO3.SiteKickstarter/',
-      'classesPath' => 'Classes/',
-    ),
-    'Visol.LeaOxleyCom' => 
-    array (
-      'state' => 'active',
-      'packagePath' => 'Sites/Visol.LeaOxleyCom/',
-      'classesPath' => 'Classes/',
-      'manifestPath' => '',
-      'composerName' => 'visol/leaoxleycom',
     ),
     'mikey179.vfsStream' => 
     array (
@@ -308,14 +260,6 @@ return array (
       'packagePath' => 'Libraries/phpunit/php-text-template/',
       'classesPath' => 'Classes/',
     ),
-    'phpunit.phptokenstream' => 
-    array (
-      'manifestPath' => '',
-      'composerName' => 'phpunit/php-token-stream',
-      'state' => 'active',
-      'packagePath' => 'Libraries/phpunit/php-token-stream/',
-      'classesPath' => 'Classes/',
-    ),
     'phpunit.phpcodecoverage' => 
     array (
       'manifestPath' => '',
@@ -332,6 +276,14 @@ return array (
       'packagePath' => 'Libraries/phpunit/php-timer/',
       'classesPath' => 'Classes/',
     ),
+    'phpunit.phptokenstream' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'phpunit/php-token-stream',
+      'state' => 'active',
+      'packagePath' => 'Libraries/phpunit/php-token-stream/',
+      'classesPath' => 'Classes/',
+    ),
     'phpunit.phpunitmockobjects' => 
     array (
       'manifestPath' => '',
@@ -346,6 +298,70 @@ return array (
       'composerName' => 'phpunit/phpunit',
       'state' => 'active',
       'packagePath' => 'Libraries/phpunit/phpunit/',
+      'classesPath' => 'Classes/',
+    ),
+    'symfony.console' => 
+    array (
+      'manifestPath' => 'Symfony/Component/Console/',
+      'composerName' => 'symfony/console',
+      'state' => 'active',
+      'packagePath' => 'Libraries/symfony/console/',
+      'classesPath' => '',
+    ),
+    'symfony.domcrawler' => 
+    array (
+      'manifestPath' => 'Symfony/Component/DomCrawler/',
+      'composerName' => 'symfony/dom-crawler',
+      'state' => 'active',
+      'packagePath' => 'Libraries/symfony/dom-crawler/',
+      'classesPath' => '',
+    ),
+    'symfony.yaml' => 
+    array (
+      'manifestPath' => 'Symfony/Component/Yaml/',
+      'composerName' => 'symfony/yaml',
+      'state' => 'active',
+      'packagePath' => 'Libraries/symfony/yaml/',
+      'classesPath' => '',
+    ),
+    'TYPO3.Imagine' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'typo3/imagine',
+      'state' => 'active',
+      'packagePath' => 'Application/TYPO3.Imagine/',
+      'classesPath' => 'Classes/',
+    ),
+    'TYPO3.Media' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'typo3/media',
+      'state' => 'active',
+      'packagePath' => 'Application/TYPO3.Media/',
+      'classesPath' => 'Classes/',
+    ),
+    'TYPO3.Neos' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'typo3/neos',
+      'state' => 'active',
+      'packagePath' => 'Application/TYPO3.Neos/',
+      'classesPath' => 'Classes/',
+    ),
+    'Lelesys.Plugin.SlideShow' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'lelesys/plugin-slide-show',
+      'state' => 'active',
+      'packagePath' => 'Application/Lelesys.Plugin.SlideShow/',
+      'classesPath' => 'Classes/',
+    ),
+    'TYPO3.NeosDemoTypo3Org' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'typo3/neosdemotypo3org',
+      'state' => 'inactive',
+      'packagePath' => 'Sites/TYPO3.NeosDemoTypo3Org/',
       'classesPath' => 'Classes/',
     ),
   ),

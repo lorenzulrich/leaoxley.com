@@ -1,0 +1,19 @@
+# YouTube TS Object
+prototype(Visol.LeaOxleyCom:YouTube) < prototype(TYPO3.Neos.NodeTypes:Headline)
+prototype(Visol.LeaOxleyCom:YouTube) {
+	templatePath = 'resource://Visol.LeaOxleyCom/Private/Templates/TypoScriptObjects/YouTube.html'
+	video = ${q(node).property('video')}
+	width = ${q(node).property('width')}
+	height = ${q(node).property('height')}
+}
+
+# YouTube TS Object
+prototype(Visol.LeaOxleyCom:Soundcloud) < prototype(TYPO3.Neos.NodeTypes:Headline)
+prototype(Visol.LeaOxleyCom:Soundcloud) {
+	templatePath = 'resource://Visol.LeaOxleyCom/Private/Templates/TypoScriptObjects/Soundcloud.html'
+	audio = ${q(node).property('audio')}
+	width = ${q(node).property('width')}
+	height = ${q(node).property('height')}
+}
+
+include: resource://Visol.Plugin.FlickrGallery/Private/TypoScripts/Library/Plugin.ts2
