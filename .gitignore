@@ -3,6 +3,9 @@
 /Packages/Application/
 /Packages/Libraries/
 /Packages/Framework/
+/Configuration/
+/Data/
+/Packages/
 /Web/
 /bin/
 /Readme.txt
@@ -14,4 +17,3 @@
 # temporary directory (which starts with a quote, do not ask why...)
 /Tests/Selenium/settings.xml
 Build/Resources/Java/selenium-server-standalone*
-/"
