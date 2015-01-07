@@ -3,13 +3,13 @@
  * Root TypoScript template for the Lea Oxley Site
  */
  
-include: TypoScripts/Library/ContentElements.ts2
+include: ContentElements.ts2
 namespace: TypoScript=TYPO3.TypoScript
 
 page = Page
 
-page.htmlAttributes = ${q(node).property('title')}
-page.htmlAttributes << 1.wrap(prefix: 'id="page', suffix: '"')
+page.htmlAttributes = ${'id="page' + q(node).property('title') + '"'}
+//page.htmlAttributes << 1.wrap(prefix: 'id="page', suffix: '"')
 
 
 page.head {
