@@ -8,9 +8,7 @@ namespace: TypoScript=TYPO3.TypoScript
 
 page = Page
 
-page.htmlAttributes = ${'id="page' + q(node).property('title') + '"'}
-//page.htmlAttributes << 1.wrap(prefix: 'id="page', suffix: '"')
-
+page.htmlTag.attributes.id = ${'page' + q(node).property('title')}
 
 page.head {
 	meta = TYPO3.TypoScript:Template
