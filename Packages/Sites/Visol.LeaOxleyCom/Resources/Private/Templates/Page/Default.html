@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-{namespace typo3=TYPO3\Neos\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 <html class="no-js">
     <head>
 	
 		<f:section name="meta">
 			<title>{title} - <f:if condition="{language} == 'de'"><f:then>Lea Oxley • Sängerin & Schauspielerin</f:then><f:else>Lea Oxley • singer & actress</f:else></f:if></title>
+			<meta name="description" content="{f:if(condition:'{language} == \'de\'', then: 'Website der Sängerin und Schauspielerin Lea Oxley', else: 'Website of singer and actress Lea Oxley')}" />
+			<meta name="keywords" content="Lea Oxley, Lea Ochsner, Singer, Sängerin, Actress, Schauspielerin, Musical, Musical Theatre" />
 		</f:section>
 	
 		<f:section name="stylesheets">
