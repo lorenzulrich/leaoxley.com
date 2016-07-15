@@ -35,10 +35,9 @@ page.head {
 page.body {
 	templatePath = 'resource://Visol.LeaOxleyCom/Private/Templates/Page/Default.html'
 	sectionName = 'body'
-	
 
-	
 	claim = ${q(node).parents().property('title') == 'de' ? 'Sängerin & Schauspielerin' : 'singer & actress'}
+	language = ${q(node).parents().property('title') == 'de' ? 'de' : 'en'}
 	parts {
 		menu = Menu
 		breadcrumb =  Breadcrumb

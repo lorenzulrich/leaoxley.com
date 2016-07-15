@@ -30,8 +30,9 @@
 	<f:section name="body">
         <header id="siteHeader">
             <div id="innerHeader">
-                <div id="logo">
-                </div>
+				<a href="{f:if(condition:'{language} == \'de\'', then: '/de/home.html', else: '/en/home.html')}">
+					<div id="logo"></div>
+				</a>
                 <div id="profession">
                     {claim}
                 </div>
